@@ -15,6 +15,8 @@ import {
   DigitalAgOpenPASS,
   ComponentCatalog,
   Harvest,
+  DevHarvest,
+  LocalHarvest,
 } from './pages';
 
 const extension = createExtension({
@@ -28,7 +30,8 @@ const extension = createExtension({
       responseType: 'token',
     },
   },
-  removeServices: [EnumTapisCoreService.Apps],
+  showSecondarySideBar : false,
+  removeServices: [EnumTapisCoreService.Apps,],
   mainSidebarServices: [
     'workflows',
     'pods',
@@ -136,6 +139,18 @@ extension.registerService({
   sidebarDisplayName: 'Harvest',
   iconName: 'globe',
   component: Harvest,
+});
+extension.registerService({
+  id: 'devharvest',
+  sidebarDisplayName: 'DevHarvest',
+  iconName: 'globe',
+  component: DevHarvest,
+});
+extension.registerService({
+  id: 'localharvest',
+  sidebarDisplayName: 'LocalHarvest',
+  iconName: 'globe',
+  component: LocalHarvest,
 });
 
 extension.registerService({

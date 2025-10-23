@@ -15,7 +15,7 @@ export const Harvest: Component = ({ accessToken }) => {
       {accessToken ? (
         <iframe
           style={{ flexGrow: 1, border: 'none' }}
-          src={`https://harvest.pods.icicleai.tapis.io`}
+          src={`http://localhost:5173`}
         />
       ) : (
         <>Invalid JWT. Log out of TapisUI then log back in</>

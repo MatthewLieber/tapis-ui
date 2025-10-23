@@ -10,3 +10,5 @@ export { CKNDashboard } from './CKNDashboard';
 export { CatalogAnalytics } from './CatalogAnalytics';
 export { ComponentCatalog } from './ComponentCatalog';
 export { Harvest } from './Harvest';
+export { DevHarvest } from './Harvest';
+export { LocalHarvest } from './Harvest';
